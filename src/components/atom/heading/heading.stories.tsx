@@ -5,7 +5,7 @@ const meta = {
   title: "Atom/Heading",
   component: Heading,
   tags: ["autodocs"],
-} satisfies Meta<typeof Image>;
+} satisfies Meta<typeof Heading>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
