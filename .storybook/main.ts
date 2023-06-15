@@ -1,4 +1,5 @@
 import type { StorybookConfig } from "@storybook/react-webpack5";
+import { sassResourcesLoader } from 'sass-resources-loader';
 const config: StorybookConfig = {
   stories: [
     "../src/**/*.mdx",
@@ -11,25 +12,13 @@ const config: StorybookConfig = {
     "@storybook/preset-create-react-app",
     "@storybook/addon-interactions",
   ],
-  webpackFinal: async (webpackConfig) => {
-    // Find the rule for handling CSS files
-    const cssRule = webpackConfig.module?.rules.find((rule) =>
-      rule.test?.toString().includes("css")
-    );
-
-    // Add the sass-loader to the CSS rule
-    if (cssRule) {
-      cssRule.use.push("sass-loader");
-    }
-
-    // Add the sass-resources-loader to import global Sass files
-    webpackConfig.module?.rules.push({
+  webpackFinal: (config) => {
+    config.module.rules.push({
       test: /\.scss$/,
       use: [
         {
           loader: "sass-resources-loader",
           options: {
-            // Or array of paths
             resources: [
               "./src/index.scss",
               "./src/components/atoms/**/index.scss",
