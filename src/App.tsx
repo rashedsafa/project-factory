@@ -1,7 +1,11 @@
-function App() {
+import { Heading } from "./components/atoms/heading";
+
+const App = () => {
   return (
-    <h1>APP</h1>
+    <Heading level="h2" background="APP">
+      APP
+    </Heading>
   );
-}
+};
 
 export default App;

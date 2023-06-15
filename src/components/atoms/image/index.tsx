@@ -1,5 +1,4 @@
-import React, { ImgHTMLAttributes } from "react";
-import "./image.scss";
+import { ImgHTMLAttributes } from "react";
 
 type InheritedProps = Pick<
   ImgHTMLAttributes<HTMLImageElement>,

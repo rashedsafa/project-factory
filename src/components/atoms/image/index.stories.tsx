@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Image } from "./image";
-import SampleImage1 from "../../../../public/image/kia_ux_course.jpg";
-import SampleImage2 from "../../../../public/image/sample.png";
+import { Image } from ".";
+import SampleImage1 from "../../../images/kia_ux_course.jpg";
+import SampleImage2 from "../../../images/sample.png";
 
 const meta = {
   title: "Atom/Image",

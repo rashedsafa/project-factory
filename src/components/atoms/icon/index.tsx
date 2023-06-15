@@ -1,5 +1,3 @@
-import "./icon.scss";
-
 export const iconList = [
   "calendar",
   "clock",
