@@ -1,32 +1,41 @@
 .a-text {
-  font-family: "Product Sans";
-  line-height: 0;
-
   &--16 {
     font-size: 16px;
+    line-height: calc(34 / 16);
   }
 
   &--18 {
     font-size: 18px;
+    line-height: calc(35 / 18);
   }
 
   &--19 {
     font-size: 19px;
+    line-height: calc(50 / 19);
   }
 
   &--20 {
     font-size: 20px;
+    line-height: calc(48 / 20);
   }
 
   &--21 {
     font-size: 21px;
+    line-height: calc(33 / 21);
   }
 
   &--22 {
     font-size: 22px;
+    line-height: calc(56 / 22);
   }
 
   &--23 {
     font-size: 23px;
+    line-height: calc(55 / 23);
+  }
+
+  &--24 {
+    font-size: 24px;
+    line-height: calc(52 / 24);
   }
 }

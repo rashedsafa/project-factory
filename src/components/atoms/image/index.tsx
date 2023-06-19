@@ -5,12 +5,14 @@ type InheritedProps = Pick<
   "src" | "alt" | "width" | "height"
 >;
 interface ImageProps extends InheritedProps {
-  radius?: number;
+  radius?: 10 | 25;
 }
 
 export const Image = ({ radius, alt, ...rest }: ImageProps) => {
   return (
-    <div className="a-image" style={{ borderRadius: `${radius}px` }}>
+    <div
+      className={["a-image", `${radius ? `a-icon--${radius}` : ""}`].join(" ")}
+    >
       <img alt={alt} {...rest} />
     </div>
   );

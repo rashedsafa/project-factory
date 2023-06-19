@@ -18,16 +18,11 @@ export const iconList = [
 
 interface IconProps {
   icon: (typeof iconList)[number];
-  height: number;
-  width: number;
 }
 
-export const Icon = ({ icon, height, width }: IconProps) => {
+export const Icon = ({ icon }: IconProps) => {
   return (
-    <span
-      className={["a-icon", `a-icon--${icon}`].join(" ")}
-      style={{ height: `${height}px`, width: `${width}px` }}
-    >
+    <span className={["a-icon", `a-icon--${icon}`].join(" ")}>
       <i className="a-icon__icon" />
     </span>
   );

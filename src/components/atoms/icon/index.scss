@@ -13,62 +13,92 @@
 
     #{$root}--calendar & {
       background-image: url("~images/icons/calendar.svg");
+      height: 23px;
+      width: 23.75px;
     }
 
     #{$root}--clock & {
       background-image: url("~images/icons/clock.svg");
+      width: 22.5px;
+      height: 22.5px;
     }
 
     #{$root}--facebook_white & {
       background-image: url("~images/icons/facebook_white.svg");
+      height: 28px;
+      width: 28px;
     }
 
     #{$root}--facebook & {
       background-image: url("~images/icons/facebook.svg");
+      height: 28px;
+      width: 28px;
     }
 
     #{$root}--instagram_white & {
       background-image: url("~images/icons/instagram_white.svg");
+      height: 28px;
+      width: 28px;
     }
 
     #{$root}--instagram & {
       background-image: url("~images/icons/instagram.svg");
+      height: 28px;
+      width: 28px;
     }
 
     #{$root}--left_arrow & {
       background-image: url("~images/icons/left_arrow.svg");
+      height: 19.34px;
+      width: 9.67px;
     }
 
     #{$root}--menu & {
       background-image: url("~images/icons/menu.svg");
+      height: 14px;
+      width: 17px;
     }
 
     #{$root}--minus & {
       background-image: url("~images/icons/minus.svg");
+      width: 18.85px;
+      height: 1px;
     }
 
     #{$root}--play & {
       background-image: url("~images/icons/play.svg");
+      width: 29px;
+      height: 29px;
     }
 
     #{$root}--plus & {
       background-image: url("~images/icons/plus.svg");
+      height: 18.85px;
+      width: 18.85px;
     }
 
     #{$root}--right_arrow & {
       background-image: url("~images/icons/right_arrow.svg");
+      height: 19.34px;
+      width: 9.67px;
     }
 
     #{$root}--tick & {
       background-image: url("~images/icons/tick.svg");
+      height: 27px;
+      width: 27px;
     }
 
     #{$root}--twitter_white & {
       background-image: url("~images/icons/twitter_white.svg");
+      height: 26px;
+      width: 32px;
     }
 
     #{$root}--twitter & {
       background-image: url("~images/icons/twitter.svg");
+      height: 26px;
+      width: 32px;
     }
   }
 }

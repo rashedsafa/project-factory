@@ -22,7 +22,8 @@
     "build": "react-app-rewired build",
     "eject": "react-app-rewired eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prettier-write": "prettier --write \"src/**/*.@(ts|tsx|scss)\""
   },
   "eslintConfig": {
     "extends": [

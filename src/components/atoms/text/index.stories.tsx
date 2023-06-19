@@ -41,8 +41,9 @@ export const Size20: Story = {
 export const Size21: Story = {
   args: {
     size: 21,
-    children: "Who are the audiences of the product design period of the product factory?",
-    lineHeight: 33/21,
+    children:
+      "Who are the audiences of the product design period of the product factory?",
+    lineHeight: 33 / 21,
   },
 };
 

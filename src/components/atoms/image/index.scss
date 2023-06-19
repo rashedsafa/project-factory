@@ -1,4 +1,12 @@
 .a-image {
   width: fit-content;
   height: fit-content;
+  border-radius: 0;
+
+  &--10 {
+    border-radius: 10px;
+  }
+  &--25 {
+    border-radius: 25px;
+  }
 }

@@ -22,8 +22,6 @@ export const WithRadius: Story = {
   args: {
     src: SampleImage2,
     radius: 10,
-    height: "320px",
-    width: "320px",
   },
 };
 

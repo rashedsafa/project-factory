@@ -40,6 +40,6 @@ export const SmallSecondary: Story = {
 export const IconButton: Story = {
   args: {
     icon: true,
-    children: <Icon icon="left_arrow" height={20} width={10} />,
+    children: <Icon icon="left_arrow" />,
   },
 };

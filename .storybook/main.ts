@@ -1,5 +1,5 @@
 import type { StorybookConfig } from "@storybook/react-webpack5";
-import { sassResourcesLoader } from 'sass-resources-loader';
+
 const config: StorybookConfig = {
   stories: [
     "../src/**/*.mdx",
@@ -19,17 +19,11 @@ const config: StorybookConfig = {
         {
           loader: "sass-resources-loader",
           options: {
-            resources: [
-              "./src/index.scss",
-              "./src/components/atoms/**/index.scss",
-              // './src/components/molecules/**/index.scss',
-              // './src/components/organisms/**/index.scss',
-            ],
+            resources: ["./src/index.scss", "./src/components/**/*.scss"],
           },
         },
       ],
     });
-
     return config;
   },
   framework: {
