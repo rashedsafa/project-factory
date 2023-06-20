@@ -1,9 +1,10 @@
 .m-list {
   &__item {
     display: flex;
-    column-gap: 24px;
+    column-gap: $size-24;
+    align-items: center;
     &:not(:last-child) {
-      padding-bottom: 45px;
+      padding-bottom: $size-45;
     }
   }
 }

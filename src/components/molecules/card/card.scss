@@ -1,5 +1,5 @@
 .m-card {
-  padding: 50px 142px;
-  border-radius: 30px;
-  box-shadow: 50px 50px 49.5px 0px rgba($color: #292929, $alpha: 0.0588);
+  padding: $size-50 $size-142;
+  border-radius: $size-30;
+  box-shadow: 50px 50px 49.5px 0px rgba($color-heavy-metal, 0.0588);
 }

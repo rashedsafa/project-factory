@@ -10,9 +10,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Size16: Story = {
+export const Default: Story = {
   args: {
-    size: 16,
     children: "Experience",
   },
 };
@@ -43,7 +42,6 @@ export const Size21: Story = {
     size: 21,
     children:
       "Who are the audiences of the product design period of the product factory?",
-    lineHeight: 33 / 21,
   },
 };
 

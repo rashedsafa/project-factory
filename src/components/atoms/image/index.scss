@@ -4,9 +4,9 @@
   border-radius: 0;
 
   &--10 {
-    border-radius: 10px;
+    border-radius: $size-10;
   }
   &--25 {
-    border-radius: 25px;
+    border-radius: $size-25;
   }
 }
