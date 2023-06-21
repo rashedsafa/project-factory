@@ -1,0 +1,35 @@
+.m-tab {
+  &_header {
+    display: flex;
+    border: 1px solid $color-black;
+    border-radius: $size-16;
+    font-size: $size-19;
+    line-height: $line-height-23_19;
+  }
+
+  &_item {
+    flex: 1;
+    padding: $size-10;
+    cursor: pointer;
+    text-align: center;
+    border-right: 1px solid $color-black;
+
+    &:last-child {
+      border-right: none;
+      border-top-right-radius: $size-16;
+      border-bottom-right-radius: $size-16;
+    }
+    &:first-child {
+      border-top-left-radius: $size-16;
+      border-bottom-left-radius: $size-16;
+    }
+    &.active {
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+
+  &_content {
+    padding-top: $size-24;
+  }
+}
