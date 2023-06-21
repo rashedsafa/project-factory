@@ -17,4 +17,8 @@ body {
   h3 {
     font-size: $size-24;
   }
+  ul,
+  ol {
+    list-style-type: none;
+  }
 }

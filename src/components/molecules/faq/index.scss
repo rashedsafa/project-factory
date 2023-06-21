@@ -1,0 +1,36 @@
+.m-faq {
+  padding: $size-32 $size-64;
+  border-radius: $size-26;
+  box-shadow: $size-10 $size-10 $size-99 0 rgba($color-quill-grey, 0.16);
+  font-size: $size-21;
+  line-height: $line-height-33_21;
+
+  &_questionWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_icon {
+    display: flex;
+    transition: transform 0.5s ease;
+
+    &.plus {
+      transform: rotate(-90deg);
+    }
+    &.minus {
+      transform: rotate(0);
+    }
+  }
+
+  &_answer {
+    margin-top: $size-16;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+
+    &.expanded {
+      max-height: $size-200;
+    }
+  }
+}
