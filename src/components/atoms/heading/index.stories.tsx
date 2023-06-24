@@ -31,6 +31,13 @@ export const H3: Story = {
   },
 };
 
+export const H4: Story = {
+  args: {
+    level: "h4",
+    children: "Experience",
+  },
+};
+
 export const WithBg: Story = {
   args: {
     level: "h2",

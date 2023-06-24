@@ -1,7 +1,10 @@
 // size
+$size-9: 9px;
 $size-10: 10px;
 $size-12: 12px;
+$size-15: 15px;
 $size-16: 16px;
+$size-17: 17px;
 $size-18: 18px;
 $size-19: 19px;
 $size-20: 20px;
@@ -16,19 +19,24 @@ $size-31: 31px;
 $size-32: 32px;
 $size-34: 34px;
 $size-35: 35px;
+$size-42: 42px;
 $size-45: 45px;
+$size-46: 46px;
 $size-50: 50px;
 $size-64: 64px;
 $size-99: 99px;
 $size-120: 120px;
 $size-142: 142px;
+$size-157: 157px;
 $size-200: 200px;
 
 // line heights
 $line-height-34_16: calc(34 / 16);
+$line-height-30_18: calc(30 / 18);
 $line-height-35_18: calc(35 / 18);
 $line-height-23_19: calc(23 / 19);
 $line-height-50_19: calc(50 / 19);
+$line-height-35_20: calc(35 / 20);
 $line-height-48_20: calc(48 / 20);
 $line-height-33_21: calc(33 / 21);
 $line-height-56_22: calc(56 / 22);
@@ -42,3 +50,4 @@ $color-smokey-gray: #707070;
 $color-heavy-metal: #292929;
 $color-white: #ffffff;
 $color-quill-grey: #d3d3d3;
+$color-cloud-grey: #b4b4b4;

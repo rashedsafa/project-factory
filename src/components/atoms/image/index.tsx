@@ -11,7 +11,7 @@ interface ImageProps extends InheritedProps {
 export const Image = ({ radius, alt, ...rest }: ImageProps) => {
   return (
     <div
-      className={["a-image", `${radius ? `a-icon--${radius}` : ""}`].join(" ")}
+      className={["a-image", `${radius ? `a-image--${radius}` : ""}`].join(" ")}
     >
       <img alt={alt} {...rest} />
     </div>

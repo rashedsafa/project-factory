@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { MasterCard } from ".";
+import CardImage from "../../../images/cardImage.png";
 
 const meta = {
   title: "Molecule/MasterCard",
@@ -12,6 +13,12 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "content",
+    imgSrc: CardImage,
+    title: "Shervin Mashayekh",
+    profession: "Additive Product Manager",
+    twitterLink: "#",
+    fbLink: "#",
+    instagramLink: "#",
+    aboutLink: "#",
   },
 };
