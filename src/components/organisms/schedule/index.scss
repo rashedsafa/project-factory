@@ -1,0 +1,55 @@
+.o-schedule {
+  &__heading {
+    display: flex;
+    justify-content: center;
+    column-gap: 114px;
+    font-size: 29px;
+    font-weight: bold;
+    padding-bottom: 82px;
+  }
+
+  &__date {
+    display: flex;
+    column-gap: 96px;
+    justify-content: center;
+    padding-bottom: 103px;
+  }
+
+  &__remaining {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__remainingDay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+    width: 63px;
+    background-color: $color-black;
+    border-radius: 16px;
+    color: $color-white;
+    font-size: 33px;
+    font-weight: bold;
+    padding: 12px 17px;
+    margin-right: $size-42;
+  }
+
+  &__remainingString {
+    margin-right: 57px;
+    font-size: 33px;
+    font-weight: bold;
+  }
+
+  & input {
+    width: 682px;
+    height: 160px;
+    text-align: center;
+    font-family: "Product Sans";
+    font-weight: bold;
+    font-size: 45px;
+    border-radius: 26px;
+    box-shadow: 40px 40px $size-99 0 rgba(#acacac, 0.16);
+  }
+}

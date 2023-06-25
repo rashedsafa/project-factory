@@ -34,46 +34,46 @@ export const ProjectSlider = ({
         <List>{listItems}</List>
       </div>
       <div className="o-projectSlider__sliderWrapper">
-      <Swiper
-        modules={[Pagination]}
-        pagination={{ type: "fraction" }}
-        spaceBetween={16}
-        centeredSlides={true}
-        slidesPerView="auto"
-        onSwiper={(swiper) => {
-          setSwiper(swiper);
-        }}
-        onActiveIndexChange={(swiper) => {
-          console.log("active index is", swiper.activeIndex);
-        }}
-        className="o-projectSlider__slider"
-      >
-        {imgSrc.map((image, index) => (
-          <SwiperSlide>
-            <img src={image} alt={index.toString()} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className="o-projectSlider__buttonWrapper">
-        <Button
-          className="button"
-          onClick={() => {
-            swiper?.slidePrev();
+        <Swiper
+          modules={[Pagination]}
+          pagination={{ type: "fraction" }}
+          spaceBetween={16}
+          centeredSlides={true}
+          slidesPerView="auto"
+          onSwiper={(swiper) => {
+            setSwiper(swiper);
           }}
-          icon
-        >
-          <Icon icon="left_arrow" />
-        </Button>
-        <Button
-          className="button"
-          onClick={() => {
-            swiper?.slideNext();
+          onActiveIndexChange={(swiper) => {
+            console.log("active index is", swiper.activeIndex);
           }}
-          icon
+          className="o-projectSlider__slider"
         >
-          <Icon icon="right_arrow" />
-        </Button>
-      </div>
+          {imgSrc.map((image, index) => (
+            <SwiperSlide>
+              <img src={image} alt={index.toString()} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="o-projectSlider__buttonWrapper">
+          <Button
+            className="button"
+            onClick={() => {
+              swiper?.slidePrev();
+            }}
+            icon
+          >
+            <Icon icon="left_arrow" />
+          </Button>
+          <Button
+            className="button"
+            onClick={() => {
+              swiper?.slideNext();
+            }}
+            icon
+          >
+            <Icon icon="right_arrow" />
+          </Button>
+        </div>
       </div>
     </div>
   );
