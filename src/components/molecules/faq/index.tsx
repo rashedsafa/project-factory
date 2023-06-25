@@ -14,13 +14,13 @@ export const Faq: (props: FaqProps) => JSX.Element = ({ question, answer }) => {
   };
   return (
     <div className="m-faq">
-      <div className="m-faq_questionWrapper" onClick={toggle}>
-        <div className="m-faq_question">{question}</div>
-        <div className={`m-faq_icon ${isExpanded ? "minus" : "plus"}`}>
+      <div className="m-faq__questionWrapper" onClick={toggle}>
+        <div>{question}</div>
+        <div className={`m-faq__icon ${isExpanded ? "minus" : "plus"}`}>
           <Icon icon={`${isExpanded ? "minus" : "plus"}`} />
         </div>
       </div>
-      <div className={`m-faq_answer ${isExpanded ? "expanded" : ""}`}>
+      <div className={`m-faq__answer ${isExpanded ? "expanded" : ""}`}>
         {answer}
       </div>
     </div>

@@ -23,10 +23,10 @@ export const MasterCard: (props: MasterCardProps) => JSX.Element = ({
 }) => {
   return (
     <div className="m-masterCard">
-      <div className="m-masterCard_imageWrapper">
+      <div className="m-masterCard__imageWrapper">
         <Image src={imgSrc} radius={10} />
-        <div className="m-masterCard_panel">
-          <div className="m-masterCard_links">
+        <div className="m-masterCard__panel">
+          <div className="m-masterCard__links">
             <a href={twitterLink}>
               <Icon icon="twitter_white" />
             </a>
@@ -37,16 +37,16 @@ export const MasterCard: (props: MasterCardProps) => JSX.Element = ({
               <Icon icon="instagram_white" />
             </a>
           </div>
-          <a href={aboutLink} className="m-masterCard_about">
+          <a href={aboutLink} className="m-masterCard__about">
             <span>
               <Icon icon="menu" />
             </span>
-            <span className="m-masterCard_aboutText">About Master</span>
+            <span className="m-masterCard__aboutText">About Master</span>
           </a>
         </div>
       </div>
-      <div className="m-masterCard_title">{title}</div>
-      <Text size={18} className="m-masterCard_profession">
+      <div className="m-masterCard__title">{title}</div>
+      <Text size={18} className="m-masterCard__profession">
         {profession}
       </Text>
     </div>

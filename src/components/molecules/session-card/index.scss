@@ -1,0 +1,16 @@
+.m-sessionCard {
+  &__inner {
+    padding-top: 48px;
+    padding-left: 28px;
+    padding-right: 126px;
+    display: flex;
+    column-gap: 125px;
+  }
+
+  &__imageWrapper {
+    flex-basis: 34%;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 25px;
+  }
+}

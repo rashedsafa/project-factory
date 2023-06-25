@@ -1,5 +1,5 @@
 .o-faqList {
-  &_item {
+  &__item {
     &:not(:last-child) {
       padding-bottom: $size-35;
     }

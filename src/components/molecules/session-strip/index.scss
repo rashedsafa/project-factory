@@ -1,0 +1,45 @@
+.m-sessionStrip {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 53px;
+  background-color: $color-vista-white;
+  border-radius: 12px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    content: "";
+    background-color: $color-black;
+    height: 40px;
+    width: 6px;
+    border-radius: 6px;
+  }
+
+  &__inner {
+    display: flex;
+    column-gap: 126px;
+    padding-left: 28px;
+  }
+
+  &__session {
+    font-size: $size-26;
+    font-weight: bold;
+    width: 193px;
+  }
+
+  &__details {
+    display: flex;
+    column-gap: 130px;
+  }
+
+  &__detailsItem {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    color: $color-black;
+    font-size: $size-19;
+  }
+}

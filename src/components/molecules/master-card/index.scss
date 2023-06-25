@@ -1,12 +1,12 @@
 .m-masterCard {
   width: fit-content;
-  &_imageWrapper {
+  &__imageWrapper {
     position: relative;
     height: $size-200;
     width: $size-200;
   }
 
-  &_panel {
+  &__panel {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -19,17 +19,17 @@
     border-radius: $size-10;
   }
 
-  &:hover .m-masterCard_panel {
+  &:hover .m-masterCard__panel {
     height: $size-200;
   }
 
-  &_links {
+  &__links {
     display: flex;
     column-gap: $size-30;
     padding: $size-42 $size-26;
   }
 
-  &_about {
+  &__about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@
     background-color: rgba($color-cloud-grey, 0.7);
   }
 
-  &_aboutText {
+  &__aboutText {
     margin-left: $size-18;
     font-size: $size-15;
     font-weight: bold;
@@ -49,7 +49,7 @@
     color: $color-white;
   }
 
-  &_title {
+  &__title {
     margin-top: $size-21;
     margin-bottom: $size-17;
     font-size: $size-20;
@@ -57,7 +57,7 @@
     line-height: $line-height-35_20;
   }
 
-  &_profession {
+  &__profession {
     line-height: $line-height-30_18;
   }
 }

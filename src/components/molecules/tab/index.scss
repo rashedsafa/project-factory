@@ -1,5 +1,5 @@
 .m-tab {
-  &_header {
+  &__header {
     display: flex;
     border: 1px solid $color-black;
     border-radius: $size-16;
@@ -7,7 +7,7 @@
     line-height: $line-height-23_19;
   }
 
-  &_item {
+  &__item {
     flex: 1;
     padding: $size-10;
     cursor: pointer;
@@ -29,7 +29,7 @@
     }
   }
 
-  &_content {
+  &__content {
     padding-top: $size-24;
   }
 }

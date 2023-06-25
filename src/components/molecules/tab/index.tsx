@@ -16,18 +16,18 @@ export const Tab: (props: TabProps) => JSX.Element = ({ tabs }) => {
 
   return (
     <div className="m-tab">
-      <div className="m-tab_header">
+      <div className="m-tab__header">
         {tabs.map((tab, index) => (
           <div
             key={index}
-            className={`m-tab_item ${index === activeTab ? "active" : ""}`}
+            className={`m-tab__item ${index === activeTab ? "active" : ""}`}
             onClick={() => handleTabClick(index)}
           >
             {tab.title}
           </div>
         ))}
       </div>
-      <div className="m-tab_content">{tabs[activeTab].content}</div>
+      <div className="m-tab__content">{tabs[activeTab].content}</div>
     </div>
   );
 };

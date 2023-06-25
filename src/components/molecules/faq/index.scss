@@ -5,13 +5,13 @@
   font-size: $size-21;
   line-height: $line-height-33_21;
 
-  &_questionWrapper {
+  &__questionWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  &_icon {
+  &__icon {
     display: flex;
     transition: transform 0.5s ease;
 
@@ -23,7 +23,7 @@
     }
   }
 
-  &_answer {
+  &__answer {
     margin-top: $size-16;
     max-height: 0;
     overflow: hidden;
