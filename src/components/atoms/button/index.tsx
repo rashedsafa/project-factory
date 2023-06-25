@@ -6,6 +6,7 @@ interface ButtonProps {
   icon?: boolean;
   size?: "small" | "large" | "medium";
   onClick?: () => void;
+  className?: string;
 }
 
 export const Button: (props: ButtonProps) => JSX.Element = ({
@@ -13,6 +14,7 @@ export const Button: (props: ButtonProps) => JSX.Element = ({
   mode,
   icon = false,
   size,
+  className,
   ...props
 }) => {
   return (
@@ -23,6 +25,7 @@ export const Button: (props: ButtonProps) => JSX.Element = ({
         `${icon ? "a-button--icon" : ""}`,
         `${size ? "a-button--" + size : ""}`,
         `${mode ? "a-button--" + mode : ""}`,
+        `${className ? className : ""}`,
       ].join(" ")}
       {...props}
     >
