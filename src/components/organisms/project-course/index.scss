@@ -1,0 +1,29 @@
+.o-projectCourse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: auto 134px;
+  column-gap: 98px;
+
+  &__subheading {
+    position: relative;
+    margin-top: $size-20;
+    font-size: 38px;
+    color: #8d8d8d;
+    margin-bottom: 101px;
+
+    &::before{
+      position: absolute;
+      content: '';
+      height: 126px;
+      width: 550px;
+      background-image: url("~images/components/projectDesignCourseBg.png");
+      top:0;
+      left: 0;
+    }
+  }
+
+  &__description {
+    margin-bottom: 70px;
+  }
+}
