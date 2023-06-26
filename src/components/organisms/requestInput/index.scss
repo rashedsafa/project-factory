@@ -1,0 +1,50 @@
+.o-requestInput {
+  position: relative;
+  display: flex;
+  // justify-content: space-between;
+  column-gap: 342px;
+  align-items: center;
+  background-color: $color-black;
+  color: $color-white;
+  height: 667px;
+  padding: 132px 230px;
+
+  &::before {
+    position: absolute;
+    background-image: url("~images/components/requestInputBg.png");
+    content: "";
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 667px;
+    top: 0;
+    left: 50%;
+  }
+
+  &__heading {
+    font-size: $size-34;
+    font-weight: bold;
+  }
+
+  &__requestText {
+    margin-top: 32px;
+    width: 571px;
+    margin-bottom: 48px;
+  }
+
+  &__input {
+    height: 62px;
+    width: 557.5px;
+    border-radius: $size-16;
+    background-color: rgba($color-white, 0.15);
+    padding: 18px 0 18px 40px;
+    color: $color-white;
+    font-size: $size-22;
+    margin-bottom: 61px;
+  }
+
+  &__confirmation {
+    display: flex;
+    align-items: center;
+    column-gap: $size-16;
+  }
+}

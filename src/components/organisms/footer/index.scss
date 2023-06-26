@@ -1,0 +1,11 @@
+.o-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__links {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+  }
+}
